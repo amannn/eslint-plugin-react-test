@@ -3,12 +3,12 @@ import {Component} from 'react';
 
 const propTypes = {
   b: PropTypes.number,
-  a: PropTypes.number
+  a: PropTypes.number // An error is shown here
 };
 
 type Props = {
   b?: number;
-  a?: number;
+  a?: number; // No error shown here
 };
 
 export class A extends Component<Props> {
